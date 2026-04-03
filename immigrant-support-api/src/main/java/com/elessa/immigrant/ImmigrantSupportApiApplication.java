@@ -1,4 +1,4 @@
-package com.farm.immigrant;
+package com.elessa.immigrant;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
