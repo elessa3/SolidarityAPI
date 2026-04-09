@@ -36,7 +36,7 @@ public class Immigrant {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private String status; // PENDING, REGULARIZED, DOCUMENT_ISSUE
+    private ImmigrantStatus status; // PENDING, REGULARIZED, DOCUMENT_ISSUE
 
     @Column(length = 500)
     private String observations; // Observações sobre o caso
@@ -54,7 +54,9 @@ public class Immigrant {
     protected void onCreate() {
         createdAt = LocalDateTime.now();
         updatedAt = LocalDateTime.now();
-
+        if (status == null) {
+            status = ImmigrantStatus.PENDING;
+        }
     }
 
     @PreUpdate
