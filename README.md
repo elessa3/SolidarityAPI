@@ -78,9 +78,9 @@ Authorization: Bearer {token}
 # Test coverage: 85% (service and controller classes)
 `
 
-## 🌐 Deploy
+## 🌐 API em Produção
 
-API available at: [https://immigrant-support-api.onrender.com](https://immigrant-support-api.onrender.com)
+Acesse a documentação interativa em: [https://solidarityapi.onrender.com/swagger-ui.html](https://solidarityapi.onrender.com/swagger-ui.html)
 
 ## 🤝 Contribution
 
