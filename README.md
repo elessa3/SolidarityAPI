@@ -61,10 +61,12 @@ Authorization: Bearer {token}
   "birthDate": "1990-05-15",
   "status": "PENDING"
 }
+
 🧪 Testing
 bash
 ./mvnw test
 # Test coverage: ~85% (service and controller layers)
+
 🤝 Contributing
 Suggestions are welcome! Open an issue or submit a pull request.
 
