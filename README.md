@@ -52,14 +52,21 @@ export JWT_SECRET=yourSecretKey
 After running locally, access: http://localhost:8080/swagger-ui.html
 
 Sample Request (Create Immigrant)
-json
 POST /api/immigrants
 Authorization: Bearer {token}
 {
   "fullName": "Maria Silva",
   "nationality": "Venezuela",
   "birthDate": "1990-05-15",
-  "status": "PENDING"
+  "documentNumber": "V123456",
+  "status": "PENDING",
+  "observations": "Família com 3 filhos",
+  "phone": "+33 612345678",
+  "street": "Rue de la Paix",
+  "number": "42",
+  "zipCode": "75001",
+  "city": "Paris",
+  "country": "France"
 }
 
 🧪 Testing
