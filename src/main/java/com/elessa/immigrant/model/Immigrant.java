@@ -41,6 +41,26 @@ public class Immigrant {
     @Column(length = 500)
     private String observations; // Observações sobre o caso
 
+    // Informacoes adicionais
+
+    @Column(name = "Phone", length = 20)
+    private String phone;  // Telefone (ex: +33 123456789)
+
+    @Column(name = "Street",length = 100)
+    private String street;  // Logradouro (Rua/Avenida)
+
+    @Column(name = "Number",length = 10)
+    private String number;  // Número
+
+    @Column(name = "ZipCode",length = 20)
+    private String zipCode;  // Código Postal
+
+    @Column(name = "City",length = 50)
+    private String city;  // Cidade
+
+    @Column(name = "Country",length = 50)
+    private String country;  // País
+
     @Column(name = "created_at")
     private LocalDateTime registeredAt;
 
@@ -63,4 +83,6 @@ public class Immigrant {
     protected void onUpdate() {
         lastUpdate = LocalDateTime.now();
     }
+
+
 }

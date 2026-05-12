@@ -22,4 +22,14 @@ public class ImmigrantResponseDTO {
     private LocalDateTime registeredAt;
     private LocalDateTime lastUpdate;
     private Integer totalServiceRecords; // Quantos atendimentos já teve
+    // ===== NOVOS CAMPOS =====
+    private String phone;
+    private String street;
+    private String number;
+    private String zipCode;
+    private String city;
+    private String country;
+
+    public ImmigrantResponseDTO(Long id, String fullName, String nationality, LocalDate birthDate, String documentNumber, ImmigrantStatus status, String observations, String phone, String street, String number, String zipCode, String city, String country, LocalDateTime registeredAt, LocalDateTime lastUpdate, int totalRecords) {
+    }
 }

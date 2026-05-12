@@ -32,4 +32,24 @@ public class ImmigrantRequestDTO {
 
     @Size(max = 500, message = "Observações devem ter no máximo 500 caracteres")
     private String observations;
+
+    //Info adicionais
+    @Size(max = 20, message = "Telefone deve ter no máximo 20 caracteres")
+    @Pattern(regexp = "^\\+?[0-9\\s-]+$", message = "Telefone deve conter apenas números, espaços, hífen e opcionalmente + no início")
+    private String phone;
+
+    @Size(max = 100, message = "Logradouro deve ter no máximo 100 caracteres")
+    private String street;
+
+    @Size(max = 10, message = "Número deve ter no máximo 10 caracteres")
+    private String number;
+
+    @Size(max = 20, message = "CEP deve ter no máximo 20 caracteres")
+    private String zipCode;
+
+    @Size(max = 50, message = "Cidade deve ter no máximo 50 caracteres")
+    private String city;
+
+    @Size(max = 50, message = "País deve ter no máximo 50 caracteres")
+    private String country;
 }

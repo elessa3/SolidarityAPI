@@ -38,6 +38,13 @@ public class ImmigrantService {
         immigrant.setDocumentNumber(requestDTO.getDocumentNumber());
         immigrant.setStatus(requestDTO.getStatus());
         immigrant.setObservations(requestDTO.getObservations());
+        // Mapeamento dos novos campos
+        immigrant.setPhone(requestDTO.getPhone());
+        immigrant.setStreet(requestDTO.getStreet());
+        immigrant.setNumber(requestDTO.getNumber());
+        immigrant.setZipCode(requestDTO.getZipCode());
+        immigrant.setCity(requestDTO.getCity());
+        immigrant.setCountry(requestDTO.getCountry());
 
         Immigrant saved = immigrantRepository.save(immigrant);
         return convertToResponseDTO(saved);
@@ -76,6 +83,13 @@ public class ImmigrantService {
         immigrant.setDocumentNumber(requestDTO.getDocumentNumber());
         immigrant.setStatus(requestDTO.getStatus());
         immigrant.setObservations(requestDTO.getObservations());
+        // Atualizar novos campos
+        immigrant.setPhone(requestDTO.getPhone());
+        immigrant.setStreet(requestDTO.getStreet());
+        immigrant.setNumber(requestDTO.getNumber());
+        immigrant.setZipCode(requestDTO.getZipCode());
+        immigrant.setCity(requestDTO.getCity());
+        immigrant.setCountry(requestDTO.getCountry());
 
         Immigrant updated = immigrantRepository.save(immigrant);
         return convertToResponseDTO(updated);
@@ -108,6 +122,12 @@ public class ImmigrantService {
                 immigrant.getDocumentNumber(),
                 immigrant.getStatus(),
                 immigrant.getObservations(),
+                immigrant.getPhone(),
+                immigrant.getStreet(),
+                immigrant.getNumber(),
+                immigrant.getZipCode(),
+                immigrant.getCity(),
+                immigrant.getCountry(),
                 immigrant.getRegisteredAt(),
                 immigrant.getLastUpdate(),
                 totalRecords
